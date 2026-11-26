@@ -1,8 +1,8 @@
 
-// Box.asm - K = 59
-// Box: starts at row 59, 20 rows tall,
+// Box.asm - K = 45
+// Box: starts at row 45, 20 rows tall,
 // 64 pixels (4 words) wide, left edge.
-// Row 59 starts at 16384 + 32*59 = 18272.
+// Row 45 starts at 16384 + 32*45 = 17824.
 // Key pressed -> black box; key released -> box cleared.
 
 (MAIN)
@@ -21,7 +21,7 @@
     M=-1
 
 (DRAW)
-    @18272
+    @17824
     D=A
     @addr
     M=D
